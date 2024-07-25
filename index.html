@@ -131,19 +131,18 @@
 
                   <div class="main-header-one__middle">
                     <div class="main-menu-box">
-
                       <ul class="main-menu__list">
                         <li>
                           <a href="index.html">Home</a>
                         </li>
                         <li>
-                          <a href="#">Our Company</a>
+                          <a href="#about-one">Our Company</a>
                         </li>
                         <li>
-                          <a href="#">PRODUCTS & SERVICES</a>
+                          <a href="#features-two">Products & Services</a>
                         </li>
                         <li>
-                          <a href="#">TEAM</a>
+                          <a href="#team-one">Team</a>
                         </li>
                         <li>
                           <a href="contact.html">Contact</a>
@@ -251,7 +250,7 @@
         </div>
       </section>
 
-      <section class="about-one">
+      <section class="about-one" id="about-one">
         <div
           class="about-one__shape1 wow slideInLeft"
           data-wow-delay="100ms"
@@ -431,7 +430,7 @@
         </div>
       </section>
 
-      <section class="features-two">
+      <section class="features-two" id="features-two">
         <div class="container">
           <div class="sec-title text-center">
             <div class="sub-title">
@@ -523,7 +522,7 @@
         </div>
       </section>
 
-      <section class="team-one">
+      <section class="team-one" id="team-one">
         <div class="shape1 rotate-me">
           <img src="assets/images/shapes/thm-shape1.png" alt="#" />
         </div>
@@ -681,6 +680,7 @@
 
                 </div>
               </div>
+
               <div
                 class="col-xl-2 col-lg-6 col-md-6 col-sm-12 wow animated fadeInUp"
                 data-wow-delay="0.2s"
@@ -690,10 +690,10 @@
                     <h2>Links</h2>
                   </div>
                   <ul class="footer-widget__single-links-list">
-                    <li><a href="about.html">Home</a></li>
-                    <li><a href="team.html">Our Company</a></li>
-                    <li><a href="about.html">Products & Services</a></li>
-                    <li><a href="index.html">Team</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#about-one">Our Company</a></li>
+                    <li><a href="index.html#features-two">Products & Services</a></li>
+                    <li><a href="index.html#team-one">Team</a></li>
                     <li><a href="contact.html">Contact</a></li>
                   </ul>
                 </div>
@@ -709,7 +709,7 @@
           <div class="container">
             <div class="bottom-inner">
               <div class="copyright">
-                <p>© 2024 Lundrim Aliu. All rights reserved.</p>
+                <p>Copyright © 2024 All Rights Reserved.</p>
               </div>
 
               <ul class="footer-one__bottom-menu">
@@ -761,5 +761,22 @@
     <script src="assets/vendors/progress-bar/knob.js"></script>
 
     <script src="assets/js/custom.js"></script>
+    <script>
+      document.querySelector('a[href="#about-one"]').addEventListener('click', function(e) {
+        e.preventDefault();
+        document.querySelector('#about-one').scrollIntoView({ behavior: 'smooth' });
+      });
+
+      document.querySelector('a[href="#features-two"]').addEventListener('click', function(e) {
+        e.preventDefault();
+        document.querySelector('#about-one').scrollIntoView({ behavior: 'smooth' });
+      });
+
+      document.querySelector('a[href="#team-one"]').addEventListener('click', function(e) {
+        e.preventDefault();
+        document.querySelector('#about-one').scrollIntoView({ behavior: 'smooth' });
+      });
+
+    </script>
   </body>
 </html>
